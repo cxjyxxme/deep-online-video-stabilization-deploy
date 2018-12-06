@@ -1,5 +1,5 @@
-# Deep Online Video Stabilization
-https://arxiv.org/pdf/1802.08091.pdf
+# Deep Online Video Stabilization with Multi-Grid Warping Transformation Learning
+https://ieeexplore.ieee.org/document/8554287
 
 ## Prerequisites
 - Linux
