@@ -11,7 +11,7 @@ https://ieeexplore.ieee.org/document/8554287
 
 ## Getting Started
 ### Installation
-download demo.zip in https://cg.cs.tsinghua.edu.cn/people/~miao/stabnet/demo.zip
+download demo.zip at https://cg.cs.tsinghua.edu.cn/people/~miao/stabnet/demo.zip
 ```bash
 unzip demo.zip
 mv demo/models deep-online-video-stabilization-deploy/
