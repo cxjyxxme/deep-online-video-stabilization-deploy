@@ -31,7 +31,7 @@ http://cg.cs.tsinghua.edu.cn/download/DeepStab.zip
 
 ## Citation
 
-If you find this useful for your research, please use the following.
+If you find this useful for your research, please cite the following paper.
 
 ```
 @ARTICLE{StabNet, 
