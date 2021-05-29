@@ -4,7 +4,8 @@ from PIL import Image
 import numpy as np
 DEBUG = True
 def cvt_img2train(img, crop_rate = 1):
-    img = Image.fromarray(cv2.cvtColor(img,cv2.COLOR_BGR2GRAY))
+    img = img.astype('uint8')
+    img = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY))
     if (crop_rate != 1):
         h = int(height / crop_rate)
         dh = int((h - height) / 2)
