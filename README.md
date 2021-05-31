@@ -8,7 +8,7 @@ You can get the training code and data in this project: https://github.com/cxjyx
 - Linux
 - Python 3
 - NVIDIA GPU (12G or 24G memory) + CUDA cuDNN
-- tensorflow-gpu==1.3.0
+- tensorflow-gpu==1.3.0 (Latest compatible version==1.15 [with pip](https://www.tensorflow.org/install/pip))
 - numpy
 - ...
 
@@ -24,10 +24,15 @@ mkdir output
 ```
 
 ### Testing
+With reference ground truth stable available in `datas/Regular`-
 ```bash
 python3 -u deploy_bundle.py --model-dir ./models/v2_93/ --model-name model-90000 --before-ch 31 --deploy-vis --gpu_memory_fraction 0.9 --output-dir ./output/v2_93/Regular  --test-list datas/Regular/list.txt --prefix datas/Regular;
 ```
 
+With no reference ground truth stable available-
+```bash
+python3 -u deploy_no_stable.py --model-dir ./models/v2_93/ --model-name model-90000 --gpu_memory_fraction 0.9 --output-dir ./output/v2_93/Regular  --test-list datas/Regular/list.txt --prefix datas/Regular;
+```
 ### Dataset
 DeepStab dataset (7.9GB)
 http://cg.cs.tsinghua.edu.cn/download/DeepStab.zip
